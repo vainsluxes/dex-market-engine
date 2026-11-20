@@ -1,0 +1,29 @@
+{
+    "api": {
+        "base_url": "https://api.dexscreener.com/latest/dex",
+        "token_profiles_url": "https://api.dexscreener.com/token-profiles/latest/v1",
+        "token_boosts_url": "https://api.dexscreener.com/token-boosts/latest/v1",
+        "token_boosts_top_url": "https://api.dexscreener.com/token-boosts/top/v1"
+    },
+    "rate_limits": {
+        "requests_per_minute": 300,
+        "burst_size": 10,
+        "cooldown_seconds": 0.2
+    },
+    "supported_chains": [
+        "solana",
+        "base",
+        "bsc",
+        "ethereum",
+        "polygon",
+        "arbitrum",
+        "avalanche"
+    ],
+    "defaults": {
+        "watch_interval_seconds": 5,
+        "search_result_limit": 20,
+        "trending_result_limit": 25,
+        "min_liquidity_usd": 1000,
+        "min_volume_24h_usd": 500
+    }
+}
